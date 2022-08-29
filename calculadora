@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Exercicio_1 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Escolha o primeiro valor:");
+        int x = entrada.nextInt();
+        System.out.println("Escolha a operacao:");
+        char operacao = entrada.next().charAt(0);
+        System.out.println("Escolha o segundo valor:");
+        int y = entrada.nextInt();
+
+        if (operacao == '+') {
+            System.out.println("Resultado: " + (x + y));
+        }
+        if (operacao == '-') {
+            System.out.println("Resultado: " + (x - y));
+        }
+        if (operacao == '*'){
+            System.out.println("Resultado: " + (x * y));
+        }
+        if (operacao == '/'){
+            System.out.println("Resultado: " + (x / y));
+        }
+        entrada.close();
+
+    }
+}
